@@ -1,4 +1,4 @@
-# Postr
+# Bubbles
 
 [github link][github]
 
