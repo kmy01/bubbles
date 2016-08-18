@@ -1,0 +1,27 @@
+body, canvas, h1 {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+
+  box-sizing: inherit;
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  vertical-align: inherit;
+
+  background: transparent;
+}
+
+body {
+  background: #fff;
+  color: #fff;
+}
+
+canvas {
+  background: #c8e0ef;
+  border: solid 1px #ccc;
+  margin: 50px auto;
+  display: block;
+}
