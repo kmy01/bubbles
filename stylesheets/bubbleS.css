@@ -15,13 +15,19 @@ body, canvas, h1 {
 }
 
 body {
+  font-family: 'Rock Salt', cursive;
   background: #fff;
-  color: #fff;
+  color: #545454;
 }
 
 canvas {
   background: #c8e0ef;
   border: solid 1px #ccc;
-  margin: 50px auto;
+  margin: 0 auto;
   display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
 }
