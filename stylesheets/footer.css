@@ -1,0 +1,17 @@
+footer {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.footer-links li:hover {
+  color: #64a9d3;
+}
+
+.footer-links li:last-child {
+  padding-right: 0;
+}
