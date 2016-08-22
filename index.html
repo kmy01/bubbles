@@ -4,13 +4,47 @@
     <meta charset="utf-8">
     <title>bubbleS</title>
     <link rel="stylesheet" href="stylesheets/bubbleS.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/modal.css" />
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5d206d2160.js"></script>
   </head>
   <body>
     <h1>BubbleS</h1>
     <canvas></canvas>
+    <div class="modal">
+      <div class="modal-content">
+        <h2>Mission:</h2>
+        <p>
+          - Survival! <br />
+          - Clear all the bubbles<br />
+          - New row is added every 10 turns<br /><br />
+        </p>
+        <h2>Instructions:</h2>
+        <p>
+          - Use mouse to aim<br />
+          - Left click to shoot the bubble <br />
+        </p>
+      </div>
+      <span class="close-modal">X</span>
+    </div>
 
-    <script type='application/javascript' src='vendor/keymaster.js'></script>
+    <footer>
+      <ul class="footer-links">
+        <li>
+          <a href="https://www.linkedin.com/in/keimanyeung">
+            <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li><a href="http://www.keimanyeung.me">KMY</a></li>
+        <li>
+          <a href="http://www.github.com/kmy01">
+            <i class="fa fa-github fa-lg" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
     <script type='application/javascript' src='lib/bundle.js'></script>
+    <script type='application/javascript' src='js/modal.js'></script>
   </body>
 </html>
