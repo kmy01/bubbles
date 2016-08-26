@@ -2,7 +2,7 @@
 
 [Live][bubbles]
 
-[bubbles]: www.keimanyeung.me/bubbles
+[bubbles]: http://www.keimanyeung.me/bubbles
 
 ## Description
 
@@ -13,7 +13,7 @@ Bubbles is a JavaScript game based on Puzzle Bobble. Players must burst clusters
 ### Bubble Shooter
 The movement of the bubble shooter was implemented by tracking the player's mouse movements. Below is a code snippet of this implementation.
 
-First a `#getMousePos` method gets the current mouse position on the canvas. The `#mouseMoveHandler` creates an event listener on the canvas which triggers the callback when the player moves the mouse. The mouse position is calculated and saved to the shooter object. The `#clickHandler` adds an event listener for a click event. Whenever the player clicks, the callback fires the bubble with a fireBubble method.
+First a `#getMousePos` method gets the current mouse position on the canvas. The `#mouseMoveHandler` creates an event listener on the canvas which triggers a callback when the player moves the mouse. The mouse position is calculated and saved to the shooter object. The `#clickHandler` adds an event listener for a click event. Whenever the player clicks, the callback fires the bubble with a fireBubble method.
 
 ```JavaScript
 GameView.prototype.getMousePos = function (event) {
@@ -40,7 +40,7 @@ GameView.prototype.clickHandler = function () {
 ```
 
 ### Collision Checking
-The bubbles are created on a 2-Dimensional array grid system. When a bubble is shot from the shooter, the game checks when it hits another object on the grid. The `#checkCollisions` method does the check by iterating through each of the bubble on the grid and checking if it's collided with any of the bubble using `#isCollidedWith`. It checks the distance between two bubbles and returns true if the distance is less than twice the radius.
+The bubbles are created on a 2-Dimensional array grid system. When a bubble is shot from the shooter, the game checks when it hits another object on the grid. The `#checkCollisions` method iterates through each of the bubble on the grid and checks if it has collided with any of the bubbles using `#isCollidedWith`. It checks the distance between two bubbles and returns true if the distance is less than twice the radius.
 
 ```JavaScript
 Game.prototype.checkCollisions = function () {
